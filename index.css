@@ -1,0 +1,319 @@
+body {
+    margin: 0;
+    background-color: rgb(20, 20, 20);
+}
+
+#header-container {
+    background-color: #212224;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    z-index: 2;
+    padding-left: 15px;
+}
+
+#header-logo{
+    display: inline-flex;
+    
+ 
+}
+
+/*NEXON*/
+#header-name{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10px;
+
+    display:flex;
+    align-items: center;
+    font-size: larger;
+    
+}
+
+/*GAMES SUPPORT*/
+#top-left-header{
+
+    display: flex;
+    align-items: center;
+
+    font-size:small;
+    gap: 17px;
+
+}
+
+#top-left-header li a {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+    color: darkgray;
+    text-decoration: none;
+
+    transition: transform 1s ease;
+}
+
+#top-left-header li a:hover{
+
+    color: white;
+    border-bottom: blue;
+}
+
+#header-logo ul{
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+}
+
+#top-right-container{
+    display:inline-flex;
+    gap: 17px;
+    list-style: none;
+   
+}
+
+#top-right-container li a {
+
+    text-decoration: none;
+  
+}
+
+.top-right-button {
+    padding: 0 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+    font-weight: bold;
+    color: darkgray;
+    text-decoration: none;
+}
+
+
+.button-style-one{
+
+background-color: #0077FF;
+color: white;
+border-radius: 6%;
+padding: 11px 10px;
+font-size: 11px;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+
+
+
+}
+
+/* .button-style-one:hover{
+
+
+} */
+
+#banner-image{
+
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+
+
+
+#banner-block{
+    
+    height: 475px;
+    position: relative;
+
+    background-image: url(./images/img3.png)
+
+
+
+}
+
+#banner-block::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-size: full-width;
+
+    background-image: radial-gradient(transparent 25%, black);
+    
+
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 1;
+    animation: rotateBackgrounds 30s infinite;
+}
+
+/* @keyframes rotateBackgrounds {
+
+    0% {background-image: url('./images/img2.png'); }
+    33% {background-image: url('./images/img4.png'); }
+    66% {background-image: url('./images/img5.png'); }
+    100% {background-image: url('./images/img6.png'); }
+} */
+
+#banner-left-container{
+
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 80px;
+    
+}
+
+/*Title*/
+#banner-left-one{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+
+}
+
+/*Description*/
+#banner-left-two{
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12px;
+color: rgb(99, 99, 99);
+
+}
+
+/*Play for free button*/
+#banner-left-three{
+
+    width: fit-content;
+    background-color: rgb(20, 20, 20);
+    color: white;
+
+    border: 1px solid gray;
+    border-radius: 5%;
+   
+
+    padding: 14px 19px;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+#games-container{
+    display: flex;
+    justify-content: center;
+    padding: 0 10%
+    
+}
+
+#games-container #games-container-top #all-games{
+background-color: #0077FF;
+color: white;
+border-radius: 15%;
+padding: 10px 11px;
+font-size: 11px;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+}
+
+#games-container-top{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 15px;
+}
+
+#games-top-left{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#games-container-top ul{
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    gap: 7px;
+
+}
+
+#games-container-top ul a{
+    text-decoration: none;
+    color: darkgray;
+
+
+    width: fit-content;
+    background-color: rgb(20, 20, 20);
+   
+
+    border: 1px solid gray;
+    border-radius: 15%;
+   
+
+    padding: 10px 11px;
+    font-size: 11px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+#games{
+    display: flex;
+    justify-content: center;
+}
+
+#games-selection{
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 50px auto;
+    column-gap: 25px;
+    
+}
+
+.game-name{
+    color: white;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+.game-type{
+    color: darkgray;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#global-en, #saor, #below-saor, #nexon-logo, #rights{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#saor .policy, #below-saor .saor-stuff{
+    display: flex;
+    justify-content: space-between;
+}
+
+#global-en, #saor{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
+
+#below-saor, #rights{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small;
+}
